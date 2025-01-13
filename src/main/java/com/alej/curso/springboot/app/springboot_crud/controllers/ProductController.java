@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.alej.curso.springboot.app.springboot_crud.ProductValidation;
 import com.alej.curso.springboot.app.springboot_crud.entities.Product;
 import com.alej.curso.springboot.app.springboot_crud.services.IProductService;
 
@@ -31,8 +30,6 @@ public class ProductController {
     @Autowired
     private IProductService productService;
 
-    @Autowired
-    private ProductValidation validation;
 
     @GetMapping
     public List<Product> list() {
